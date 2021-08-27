@@ -12,8 +12,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1FD744018A734083A93A5586 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0172AB7927194002BA60EED8 /* Roboto-Regular.ttf */; };
+		7278BB2CD2164A64902B4B83 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C23C8C1E9BD141C091000F5E /* Roboto-Black.ttf */; };
 		763C40DBB66A86071F163A34 /* libPods-LeoARInterview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3A34BA7DA31783B4AA17AC /* libPods-LeoARInterview.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A70914E2B927424E8939E563 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5DD52582CC64A1DBDFA1331 /* Roboto-Medium.ttf */; };
+		A9DEC74E34EA4B1B8542EAFC /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7AC064429494D58B56DAB31 /* Roboto-Thin.ttf */; };
+		C27D8F62E7024DB19A0FB804 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F662BE9CC7CA4BC1887DA40C /* Roboto-Bold.ttf */; };
+		D857585A1BE940F4B4AA13F8 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53B002C1166F486BB81B182E /* Roboto-Italic.ttf */; };
+		DFB6F5AAF75E4B7A8F36F8B7 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 325FB6E66E2B44C8A6A2B9B8 /* Roboto-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +37,7 @@
 		00E356EE1AD99517003FC87E /* LeoARInterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoARInterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* LeoARInterviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoARInterviewTests.m; sourceTree = "<group>"; };
+		0172AB7927194002BA60EED8 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* LeoARInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoARInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LeoARInterview/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LeoARInterview/AppDelegate.m; sourceTree = "<group>"; };
@@ -37,13 +45,19 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LeoARInterview/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LeoARInterview/main.m; sourceTree = "<group>"; };
 		2DFC257906A23150D2E45167 /* Pods-LeoARInterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeoARInterview.debug.xcconfig"; path = "Target Support Files/Pods-LeoARInterview/Pods-LeoARInterview.debug.xcconfig"; sourceTree = "<group>"; };
+		325FB6E66E2B44C8A6A2B9B8 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		53B002C1166F486BB81B182E /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		7510128010C97FB5F8A7088C /* libPods-LeoARInterview-LeoARInterviewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeoARInterview-LeoARInterviewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LeoARInterview/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99AF82C8228356311E1E42FD /* Pods-LeoARInterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeoARInterview.release.xcconfig"; path = "Target Support Files/Pods-LeoARInterview/Pods-LeoARInterview.release.xcconfig"; sourceTree = "<group>"; };
+		A7AC064429494D58B56DAB31 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		C23C8C1E9BD141C091000F5E /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		CEDDC63845265B33BA1F0373 /* Pods-LeoARInterview-LeoARInterviewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeoARInterview-LeoARInterviewTests.debug.xcconfig"; path = "Target Support Files/Pods-LeoARInterview-LeoARInterviewTests/Pods-LeoARInterview-LeoARInterviewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3A34BA7DA31783B4AA17AC /* libPods-LeoARInterview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LeoARInterview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F106E1E1DA782DEFBCAFDFEC /* Pods-LeoARInterview-LeoARInterviewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeoARInterview-LeoARInterviewTests.release.xcconfig"; path = "Target Support Files/Pods-LeoARInterview-LeoARInterviewTests/Pods-LeoARInterview-LeoARInterviewTests.release.xcconfig"; sourceTree = "<group>"; };
+		F5DD52582CC64A1DBDFA1331 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		F662BE9CC7CA4BC1887DA40C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4368B6F0DB3847CF8045C71F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C23C8C1E9BD141C091000F5E /* Roboto-Black.ttf */,
+				F662BE9CC7CA4BC1887DA40C /* Roboto-Bold.ttf */,
+				53B002C1166F486BB81B182E /* Roboto-Italic.ttf */,
+				325FB6E66E2B44C8A6A2B9B8 /* Roboto-Light.ttf */,
+				F5DD52582CC64A1DBDFA1331 /* Roboto-Medium.ttf */,
+				0172AB7927194002BA60EED8 /* Roboto-Regular.ttf */,
+				A7AC064429494D58B56DAB31 /* Roboto-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +150,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				B526A7F3A5C9D39034F85862 /* Pods */,
+				4368B6F0DB3847CF8045C71F /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -145,7 +174,6 @@
 				CEDDC63845265B33BA1F0373 /* Pods-LeoARInterview-LeoARInterviewTests.debug.xcconfig */,
 				F106E1E1DA782DEFBCAFDFEC /* Pods-LeoARInterview-LeoARInterviewTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,6 +273,13 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7278BB2CD2164A64902B4B83 /* Roboto-Black.ttf in Resources */,
+				C27D8F62E7024DB19A0FB804 /* Roboto-Bold.ttf in Resources */,
+				D857585A1BE940F4B4AA13F8 /* Roboto-Italic.ttf in Resources */,
+				DFB6F5AAF75E4B7A8F36F8B7 /* Roboto-Light.ttf in Resources */,
+				A70914E2B927424E8939E563 /* Roboto-Medium.ttf in Resources */,
+				1FD744018A734083A93A5586 /* Roboto-Regular.ttf in Resources */,
+				A9DEC74E34EA4B1B8542EAFC /* Roboto-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
