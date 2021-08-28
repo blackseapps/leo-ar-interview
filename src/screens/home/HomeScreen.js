@@ -5,7 +5,7 @@ import {useTheme} from '@react-navigation/native';
 import {HeaderCustomOptions} from '../../navigations/NavigationHeaderOptions';
 import MusicListComponent from '../../components/listing/MusicListComponent';
 import {musicListData} from '../../data/data';
-import HomeStyles from './Home.styles';
+import HomeStyles from './Styles';
 import CancelButton from '../../views/header/left/CancelButton';
 import DoneButton from '../../views/header/right/DoneButton';
 import MusicCategoriesListComponent from '../../components/listing/MusicCategoriesListComponent';
@@ -37,7 +37,7 @@ const HomeScreen = () => {
         />
 
         <MusicListComponent
-          data={DataFilter(musicListData, 'musicType', selectedCategory)}
+          data={DataFilter(musicListData, 'tags', selectedCategory)}
         />
       </View>
     </View>

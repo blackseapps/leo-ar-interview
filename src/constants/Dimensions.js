@@ -21,7 +21,7 @@ export const wp = (dimension, isPortrait = null, isFullScreen = false) => {
     if (!isPortrait) {
       if (isFullScreen)
         dimension = scaleWH(SCREEN_WIDTH, SCREEN_HEIGHT, dimension);
-      else dimension = scaleWH(SCREEN_WIDTH, 700, dimension);
+      else dimension = scaleWH(SCREEN_WIDTH, 748, dimension);
     }
 
   return wp2dp((dimension / SCREEN_WIDTH) * 100 + '%');

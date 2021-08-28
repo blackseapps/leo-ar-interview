@@ -27,37 +27,40 @@ const MusicItemComponent = props => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.content}>
-        <View style={styles.rowLeft}>
-          <View style={styles.imageView}>
-            <Image source={item.image} style={styles.image} />
+      <SafeAreaView>
+        <View style={styles.content}>
+          <View style={styles.rowLeft}>
+            <View style={styles.imageView}>
+              <Image source={{uri:item.thumbUrl}} style={styles.image} />
+              
 
-            <TouchableOpacity style={styles.playIcon}>
-              <Entypo
-                name="controller-play"
-                size={hp(19)}
-                color={Colors.white}
-              />
-            </TouchableOpacity>
+              <TouchableOpacity style={styles.playIcon}>
+                <Entypo
+                  name="controller-play"
+                  size={hp(19)}
+                  color={Colors.white}
+                />
+              </TouchableOpacity>
+            </View>
+
+            <View style={styles.textView}>
+              <Text style={styles.name}>{item.artistName}</Text>
+              <Text style={styles.artist}>{item.artistName}</Text>
+              <Text style={styles.musicType}>
+                {'#'}
+                {item.tags[0]}
+              </Text>
+            </View>
           </View>
 
-          <View style={styles.textView}>
-            <Text style={styles.name}>{item.name}</Text>
-            <Text style={styles.artist}>{item.artist}</Text>
-            <Text style={styles.musicType}>
-              {'#'}
-              {item.musicType}
-            </Text>
+          <View style={styles.rowRight}>
+            <ButtonBaseComponent
+              title={'Choose'}
+              containerStyle={styles.buttonStyle}
+            />
           </View>
         </View>
-
-        <View style={styles.rowRight}>
-          <ButtonBaseComponent
-            title={'Choose'}
-            containerStyle={styles.buttonStyle}
-          />
-        </View>
-      </View>
+      </SafeAreaView>
     </View>
   );
 };
@@ -71,14 +74,14 @@ const Styles = (Colors, Orientation) =>
       width: wp(375, Orientation.isPortrait),
       height: hp(ITEM_HEIGHT),
       marginVertical: hp(10),
-      //  backgroundColor: 'red',
+
       alignItems: 'center',
     },
     content: {
       flexDirection: 'row',
     },
     rowLeft: {
-      width: wp(270, Orientation.isPortrait),
+      width: wp(275, Orientation.isPortrait),
       flexDirection: 'row',
       alignItems: 'center',
       //  backgroundColor: 'blue',

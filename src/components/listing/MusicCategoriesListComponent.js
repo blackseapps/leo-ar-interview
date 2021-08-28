@@ -33,7 +33,7 @@ const MusicCategoriesListComponent = props => {
   return (
     <View style={[styles.container, style]}>
       <FlatList
-        data={DataGroup(data, 'musicType')}
+        data={DataGroup(data, 'tags')}
         style={styles.musiclist}
         horizontal={true}
         showsHorizontalScrollIndicator={false}
