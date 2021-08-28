@@ -9,7 +9,7 @@ This is interview app.
   
 </details>
   
-<details>
+<details open>
 <summary><strong> Projenin Ekran Görüntüleri </strong></summary>
 
 ![alt text](https://github.com/blackseapps/leo-ar-interview/blob/master/screenshots/iosAllDevicesSS_min.png)
