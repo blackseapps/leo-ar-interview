@@ -79,6 +79,6 @@ const Styles = (Colors, Orientation) =>
     },
     isActive: {
       borderBottomWidth: 1.5,
-      borderColor: Colors.primaryText,
+      borderColor: Colors.categoryListBottomColor,
     },
   });

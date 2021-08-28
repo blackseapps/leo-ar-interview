@@ -28,8 +28,10 @@ const LightTheme = {
     notificationStatus: '#FF7F00',
 
     titleColor: '#1E1E1E',
-    subTitleColor: '#A8A8A8',
+    subTitleColor: '#7A7A7A',
     buttonColor: '#F1F1F1',
+
+    categoryListBottomColor: '#5E5A5B',
   },
   Images: {},
 };

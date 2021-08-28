@@ -1,18 +1,32 @@
 export const DataGroup = (data, key) => {
-  let newDirectory = Object.values(
+  let _tempGroup = Object.values(
     data.reduce((acc, item) => {
-      if (!acc[item.musicType])
-        acc[item.musicType] = {
+      if (!acc[item[key]])
+        acc[item[key]] = {
           id: item.id,
-          musicType: item.musicType,
-          categorie: [],
+          musicType: item[key],
+          musicTypes: [],
         };
-      acc[item.musicType].categorie.push(item.categorie);
+      acc[item[key]].musicTypes.push(item.musicTypes);
       return acc;
     }, {}),
   );
 
-  console.log(newDirectory);
+  // console.log(_tempGroup);
 
-  return newDirectory;
+  return _tempGroup;
+};
+
+export const DataFilter = (data, key, value) => {
+  let _tempGroup;
+
+  if (value === 'All') {
+    _tempGroup = data;
+  } else {
+    _tempGroup = data.filter(item => item[key] === value);
+  }
+
+  console.log(_tempGroup);
+
+  return _tempGroup;
 };

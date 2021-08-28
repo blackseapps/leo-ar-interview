@@ -10,7 +10,7 @@ export function _renderRightButtons(rightButtons, props, color) {
       {rightButtons.map(item => {
         let key = Math.floor(Math.random() * 10);
         const ItemButton = item;
-        return React.cloneElement(ItemButton, (key = key));
+        return React.cloneElement(ItemButton, {key });
       })}
     </HeaderButtonsWrapperRight>
   );
@@ -22,7 +22,7 @@ export function _renderLeftButtons(leftButtons, props, color) {
       {leftButtons.map(item => {
         let key = Math.floor(Math.random() * 10);
         const ItemButton = item;
-        return React.cloneElement(ItemButton, (key = key));
+        return React.cloneElement(ItemButton, {key });
       })}
     </HeaderButtonsWrapperLeft>
   );

@@ -6,7 +6,7 @@ import MusicCategoriesItemComponent from '../items/MusicCategoriesItemComponent'
 import {DataGroup} from '../../data/DataHelpers';
 
 const MusicCategoriesListComponent = props => {
-  const {data, style} = props;
+  const {data, style, onChangeValue} = props;
 
   const orientation = useOrientation();
 
@@ -17,6 +17,7 @@ const MusicCategoriesListComponent = props => {
 
   const onSelectItem = item => {
     setItem(item);
+    onChangeValue(item.musicType);
   };
 
   const renderItem = ({item}) => {

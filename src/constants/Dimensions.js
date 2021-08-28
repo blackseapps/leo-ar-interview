@@ -59,10 +59,10 @@ export const useOrientation = () => {
     const onChange = result => {
       setScreenInfo(result.screen);
     };
-    console.log(headerHeight);
-    Dimensions.addEventListener('change', onChange);
 
-    return () => Dimensions.removeEventListener('change', onChange);
+    const addEventListener = Dimensions.addEventListener('change', onChange);
+
+    return () => addEventListener?.remove();
   }, []);
 
   return {
