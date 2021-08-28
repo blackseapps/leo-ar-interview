@@ -11,7 +11,7 @@ const LightTheme = {
     tertiary: '#8C8C91',
 
     //Text Colors
-    primaryText: '#49495C',
+    primaryText: '#181818',
 
     //White Colors in Project
     white: '#FFFFFF',
@@ -23,9 +23,13 @@ const LightTheme = {
     red: '#880808',
 
     //Other Colors
-    borderColor: '#F5EFEF',
+    borderColor: '#A8A8A8',
     placeHolder: '#8C8CA4',
     notificationStatus: '#FF7F00',
+
+    titleColor: '#1E1E1E',
+    subTitleColor: '#A8A8A8',
+    buttonColor: '#F1F1F1',
   },
   Images: {},
 };

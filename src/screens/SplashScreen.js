@@ -12,7 +12,7 @@ const SplashSScreen = props => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace('HomeStack');
+      navigation.navigate('HomeStack');
     }, 1000);
   }, []);
 
@@ -20,7 +20,7 @@ const SplashSScreen = props => {
     <View style={styles.container}>
       <StatusBar hidden />
 
-      <Image source={Images.Logo} style={styles.logo} />
+     
     </View>
   );
 };

@@ -1,4 +1,4 @@
-import {Platform} from 'react-native';
+import {Platform, Dimensions} from 'react-native';
 import {wp, hp} from './Dimensions';
 
 /**
@@ -17,5 +17,19 @@ import {wp, hp} from './Dimensions';
  */
 
 export function FontSize(size) {
-  return Platform.OS === 'ios' ? wp(size) : hp(size);
+  const reSize = fontSizer(size);
+
+  return Platform.OS === 'ios' ? wp(reSize) : hp(reSize);
+}
+
+function fontSizer(size) {
+  const screenWidth = Dimensions.get('screen').width;
+
+  if (screenWidth > 400) {
+    return size - 3;
+  } else if (screenWidth > 250) {
+    return size;
+  } else {
+    return size;
+  }
 }

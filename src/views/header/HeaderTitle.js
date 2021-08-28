@@ -26,8 +26,8 @@ const Styles = Colors =>
       justifyContent: 'center',
     },
     text: {
-      fontSize: FontSize(16),
-      fontFamily: Fonts.bold,
+      fontSize: FontSize(15),
+      fontFamily: Fonts.medium,
       textAlign: 'center',
       color: Colors.TextColorPrimary,
     },
