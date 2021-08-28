@@ -14,7 +14,7 @@ This is interview app.
 
 ![alt text](https://github.com/blackseapps/leo-ar-interview/blob/master/screenshots/iosAllDevicesSS_min.png)
 
-Full Size : https://github.com/blackseapps/alternatif-rn-quiz/blob/master/screenshots/WalletScreen%20-%20IOS.png
+Full Size : https://github.com/blackseapps/leo-ar-interview/blob/master/screenshots/iosAllDevicesSS.png
   
 </details>
 
