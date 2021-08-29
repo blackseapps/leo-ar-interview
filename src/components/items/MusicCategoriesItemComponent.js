@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
-import {wp, hp, useOrientation, wpFull} from '../../constants/Dimensions';
+import {wp, hp, wpFull} from '../../constants/Dimensions';
 import {useTheme} from '@react-navigation/native';
 import {FontSize} from '../../constants/Sizes';
 import Fonts from '../../constants/Fonts';
@@ -20,10 +20,8 @@ const ITEM_HEIGHT = 56;
 const MusicCategoriesItemComponent = props => {
   const {item, onPress, selectedItem} = props;
 
-  const orientation = useOrientation();
-
   const {Colors} = useTheme();
-  const styles = Styles(Colors, orientation);
+  const styles = Styles(Colors);
 
   const [isSelect, setSelect] = useState(false);
 
@@ -50,7 +48,7 @@ const MusicCategoriesItemComponent = props => {
 
 export default MusicCategoriesItemComponent;
 
-const Styles = (Colors, Orientation) =>
+const Styles = (Colors) =>
   StyleSheet.create({
     container: {
       flex: 1,
@@ -69,6 +67,7 @@ const Styles = (Colors, Orientation) =>
       color: Colors.primaryText,
       paddingVertical: 0,
       paddingHorizontal: 0,
+      textTransform: 'capitalize',
     },
     musicType: {
       fontSize: FontSize(12),
@@ -76,6 +75,7 @@ const Styles = (Colors, Orientation) =>
       color: Colors.subTitleColor,
       paddingVertical: 0,
       paddingHorizontal: 0,
+      textTransform: 'capitalize',
     },
     isActive: {
       borderBottomWidth: 1.5,

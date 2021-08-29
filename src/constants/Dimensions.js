@@ -5,6 +5,8 @@ import {
   heightPercentageToDP as hp2dp,
 } from 'react-native-responsive-screen';
 import {useHeaderHeight} from '@react-navigation/stack';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import SafeArea from 'react-native-safe-area';
 
 const SCREEN_WIDTH = 375;
 const SCREEN_HEIGHT = 812;
@@ -16,13 +18,19 @@ const SCREEN_HEIGHT = 812;
  * @param dimension directly taken from design wireframes
  * @returns {string} percentage string e.g. '25%'
  */
-export const wp = (dimension, isPortrait = null, isFullScreen = false) => {
-  if (isPortrait !== null)
-    if (!isPortrait) {
+export const wp = (dimension, orientation, isFullScreen = false) => {
+  if (orientation !== undefined) {
+    if (orientation.isPortrait === false) {
       if (isFullScreen)
         dimension = scaleWH(SCREEN_WIDTH, SCREEN_HEIGHT, dimension);
-      else dimension = scaleWH(SCREEN_WIDTH, 748, dimension);
+      else
+        dimension = scaleWH(
+          SCREEN_WIDTH,
+          orientation.screenSafeHeight,
+          dimension,
+        );
     }
+  }
 
   return wp2dp((dimension / SCREEN_WIDTH) * 100 + '%');
 };
@@ -52,22 +60,35 @@ const scaleWH = (width, height, dimension) => {
 
 export const useOrientation = () => {
   const [screenInfo, setScreenInfo] = useState(Dimensions.get('screen'));
+  const [screenSafeHeight, setScreenSafeHeight] = useState(375);
 
-  const headerHeight = useHeaderHeight();
+  let _tempHeight = 0;
 
   useEffect(() => {
     const onChange = result => {
       setScreenInfo(result.screen);
+
+      SafeArea.getSafeAreaInsetsForRootView().then(value => {
+        const isPortrait = result.screen.height > result.screen.width;
+
+        if (isPortrait) _tempHeight = SCREEN_WIDTH;
+        else
+          _tempHeight =
+            result.screen.width -
+            (value.safeAreaInsets.left + value.safeAreaInsets.right);
+
+        setScreenSafeHeight(_tempHeight);
+      });
     };
 
     const addEventListener = Dimensions.addEventListener('change', onChange);
 
     return () => addEventListener?.remove();
-  }, []);
+  }, [screenSafeHeight]);
 
   return {
     ...screenInfo,
     isPortrait: screenInfo.height > screenInfo.width,
-    headerHeight: headerHeight,
+    screenSafeHeight: screenSafeHeight,
   };
 };

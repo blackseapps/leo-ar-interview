@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {FlatList, SafeAreaView, StyleSheet, View} from 'react-native';
-import useOrientation, {wp, hp} from '../../constants/Dimensions';
+import {wp, hp} from '../../constants/Dimensions';
 import {useTheme} from '@react-navigation/native';
 
 import MusicItemComponent from '../items/MusicItemComponent';
@@ -8,7 +8,7 @@ import MusicItemComponent from '../items/MusicItemComponent';
 const MusicListComponent = props => {
   const {data, style} = props;
 
-  useEffect(() => {}, []);
+
 
   const {Colors} = useTheme();
   const styles = Styles(Colors);
@@ -21,7 +21,13 @@ const MusicListComponent = props => {
 
   const renderItem = ({item}) => {
     if (item.isCategory === undefined)
-      return <MusicItemComponent item={item} onPress={onSelectItem} />;
+      return (
+        <MusicItemComponent
+          item={item}
+          
+          onPress={onSelectItem}
+        />
+      );
   };
 
   return (

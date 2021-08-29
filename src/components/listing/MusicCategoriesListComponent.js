@@ -50,7 +50,7 @@ export default MusicCategoriesListComponent;
 const Styles = (Colors, Orientation) =>
   StyleSheet.create({
     container: {
-      width: wp(375, Orientation.isPortrait, true),
+      width: wp(375, Orientation, true),
       height: hp(45),
 
       backgroundColor: Colors.white,
